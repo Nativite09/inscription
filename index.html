@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inscription BOLKY</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+  <div class="container">
+    <div class="header">
+      <h2>Inscription à BOLKY</h2>
+      <p>BOLKY est une entreprise qui rémunère ses membres pour augmenter la visibilité des marques et entreprises à travers la publicité participative.</p>
+    </div>
+
+    <form name="bolky-inscription" method="POST" data-netlify="true" enctype="multipart/form-data" action="profil.html">
+      <input type="hidden" name="form-name" value="bolky-inscription">
+
+      <label>Nom :</label>
+      <input type="text" name="nom" required>
+
+      <label>Prénom :</label>
+      <input type="text" name="prenom" required>
+
+      <label>Travail :</label>
+      <input type="text" name="travail" required>
+
+      <label>Âge :</label>
+      <input type="number" name="age" required>
+
+      <label>Profession :</label>
+      <input type="text" name="profession" required>
+
+      <label>Temps de travail par jour (en heures) :</label>
+      <input type="number" name="temps_travail_jour" required>
+
+      <label>Adresse Gmail :</label>
+      <input type="email" name="gmail" required>
+
+      <label>Numéro WhatsApp :</label>
+      <input type="text" name="whatsapp" required>
+
+      <label>Ajoutez votre photo (facultatif) :</label>
+      <input type="file" name="photo" accept="image/*">
+
+      <button type="submit">S'inscrire</button>
+    </form>
+  </div>
+
+</body>
+</html>
